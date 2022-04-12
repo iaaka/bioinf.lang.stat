@@ -88,7 +88,7 @@ castXYtable = function(x,y,i){
   m = matrix(NA,nrow=length(xs),ncol=length(ys),dimnames=list(xs,ys))
   x = as.character(x)
   y = as.character(y)
-  for(j in 1:nrow(s))
+  for(j in 1:length(x))
     m[x[j],y[j]]= i[j]
   m
 }
